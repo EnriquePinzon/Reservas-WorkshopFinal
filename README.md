@@ -27,7 +27,6 @@ El workshop de reservas se construyó con:
 - Reserva: Creación de hacia un cliente una reserva en la base de datos.
 
 Funcionalidad del sistema:
-El sistema tiene requisitos su función normal, primero, obligatorio que el Cliente debe registrarse en la aplicación para poder usar el sistema de reservas, para esto,
- los datos ingresados en los campos deben estar en el tipo de datos correctos.
- Una vez registrado el Cliente en el Sistema, el Cliente tiene la posibilidad de buscar habitaciones por tipo de habitación (premium y estándar) y fechas, 
-cuando el Cliente solicite una habitación para reservar, los sistemas validarán si la habitación está disponible o no y el sistema responderá con una reserva exitosa o una reserva rechazada
+El sistema tiene requisitos para su función orgánica, primero, se debe obligatoriamente registrar  el 'Cliente' en la aplicación para poder usar el sistema de reservas, para ello los datos ingresados en los campos deben estar en el tipo de datos correctos, en caso tal de diligenciar datos erróneos, el sistema arrojará avisos de tipo de errores de datos.
+Una vez registrado el 'Cliente' en el Sistema, el Cliente tiene la posibilidad de buscar habitaciones por tipo de habitación ya sea (premium o estándar) y fechas para reservas tales como si está disponible, que no permita generar o buscar a una fecha a la actual. 
+Una vez el Cliente solicite una habitación para reservar, los sistemas validarán si la habitación está disponible o no y el sistema responderá con una reserva exitosa o una reserva rechazada
