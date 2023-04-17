@@ -44,4 +44,11 @@ public class Habitacion {
     public void setPrecioBase(Integer precioBase) {
         this.precioBase = precioBase;
     }
+
+    public Integer calcularTotalPago(Integer precioBase){
+        if (getTipoHabitacion().equals("premium")){
+            return precioBase * 5/100;
+        }
+        return precioBase;
+    }
 }

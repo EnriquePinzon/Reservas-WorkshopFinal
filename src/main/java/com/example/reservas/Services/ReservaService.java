@@ -49,11 +49,11 @@ public class ReservaService {
         }
         Optional<Cliente> cliente = this.clienteRepository.findById(cedula);
         Optional<Habitacion> habitacion = this.habitacionRepository.findById(numero);
-
         if (cliente.isPresent() && habitacion.isPresent()) {
             List<HabitacionDTO> habitacionesDisponibles = ValidarHabitacionesDisponiblesFecha(date);
-            if (habitacionesDisponibles.contains(habitacion.get())) {
-                this.reservaRepository.save(new Reserva(date,habitacion.get(),cliente.get(),habitacion.get().getPrecioBase()));
+            Optional<HabitacionDTO> habitacionDTOOptional = habitacionesDisponibles.stream().filter(habitacionDTO -> habitacionDTO.getNumero()==numero).findFirst();
+            if (habitacionDTOOptional.isPresent()) {
+                this.reservaRepository.save(new Reserva(date,habitacion.get(),cliente.get(),habitacion.get().calcularTotalPago(habitacion.get().getPrecioBase())));
                 return new ReservaDTO(date,habitacion.get(),cliente.get(),habitacion.get().getPrecioBase());
 
         } else {
@@ -78,14 +78,6 @@ public class ReservaService {
         return localDate;
     }
 
-
-    public Integer calcularTotalPago(Habitacion habitacion){
-        Integer base = habitacion.getPrecioBase();
-        if (habitacion.getTipoHabitacion().equalsIgnoreCase("premium")){
-            return base * 5/100;
-        }
-        return base;
-    }
 
 
 
