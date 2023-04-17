@@ -25,3 +25,5 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatforrm()
 }
+
+apply plugin: 'war'
