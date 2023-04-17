@@ -17,5 +17,9 @@ CONFIGURACIÓN & REQUISITOS:
 
 ✔ Swagger
 
+## Patrón DTO (Data Transfer Object)
+
+Se utilizó el patrón DTO, para separar los datos que se transfieren entre las capas de la aplicación. La creación de las clases DTO, dieron su  utilidad y representación de datos, los cuales sirven para transportar los datos desde los controladores a los respectivos servicios.
+
 # :memo: Endpoints:
 
