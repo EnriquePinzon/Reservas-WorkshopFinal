@@ -73,7 +73,31 @@ Una vez ingresados, la API nos devolverá la creación exitosa de una reserva en
 
 ![imagen](https://user-images.githubusercontent.com/114439510/232663748-84631abc-214d-4cd8-aaa3-012cfdda84ac.png)
 
+### Endpoint obtener reserva por cédula del cliente:
+Ejemplo:
+***GET:/api/v1/reservas/1234*** 
 
+Obtiene todas las reservas realizadas por el cliente con cédula 1234.
+
+Una vez ingresados, la API nos devolverá las reservas asociadas al cliente en formato JSON.
+
+![imagen](https://user-images.githubusercontent.com/114439510/233262039-a1a99b25-e802-4bb8-b77a-0430788d07f1.png)
+
+# Diagrama de clases:
+## Cliente
+
+![Diagrama Clases Cliente](https://user-images.githubusercontent.com/114439510/233262767-4c532a1d-0db9-4669-a321-6b0c551442e1.png)
+
+## Habitacion
+
+![Diagrama de clases Habitacion](https://user-images.githubusercontent.com/114439510/233262834-2a476dbb-5889-4ab5-9b9a-d09e1355a7ef.png)
+
+## Reserva 
+
+![Diagrama de clases Reserva](https://user-images.githubusercontent.com/114439510/233262853-0467b644-bcd4-4322-a23e-6e5dcc5c43bc.png)
+
+## Test Unitarios:
+Dentro del proyecto se implementó Mockito & JUnit en el cual se pudo verificar el correcto funcionamiento de los componetes,métodos y sistemas empleados. 
 
 ## :pushpin: CI-Integración Continua:
 En el proyecto utilicé la integración continua (CI) para automatizar el proceso de construcción, prueba y despliegue de mi aplicación. Utilicé GitHub Actions para configurar y ejecutar mis flujos de trabajo de CI, lo que me permitió detectar y solucionar problemas de manera más rápida y eficiente, así como liberar nuevas versiones de mi aplicación con mayor frecuencia y confianza.
