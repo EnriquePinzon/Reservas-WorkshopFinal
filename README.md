@@ -15,7 +15,7 @@ CONFIGURACIÓN & REQUISITOS:
 
 ✔ JUnit (Test de pruebas unitarias)
 
-✔ Swagger
+✔ Swagger [Documentación Swagger](https://reservas-workshopfinal-production-5151.up.railway.app/swagger-ui/index.html)
 
 ## Patrón DTO (Data Transfer Object)
 
